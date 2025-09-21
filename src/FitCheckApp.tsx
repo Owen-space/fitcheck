@@ -69,7 +69,10 @@ export default function FitCheckApp() {
         </Card>
         <button
           className="w-full py-3 bg-black text-white rounded-lg"
-          onClick={() => setFit("레귤러핏") || setPage("result")}
+          onClick={() => {
+            setFit("레귤러핏");
+            setPage("result"); // ✅ 수정된 부분: 두 줄로 분리
+          }}
         >
           결과 확인하기
         </button>
