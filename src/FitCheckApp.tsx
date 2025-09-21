@@ -10,6 +10,7 @@ type FitGrade = "슬림핏" | "레귤러핏" | "세미오버핏" | "오버핏" |
 
 export default function FitCheckApp() {
   const [page, setPage] = useState<"form" | "result">("form");
+
   const [fit, setFit] = useState<FitGrade>("판단 불가");
 
   useEffect(() => {
