@@ -1,5 +1,5 @@
 import FitCheckApp from "../FitCheckApp";
 
-export default function Home() {
+export default function Page() {
   return <FitCheckApp />;
 }

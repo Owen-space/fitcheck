@@ -8,14 +8,6 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <head>
-        {/* 구글 애드센스 스크립트 (후에 client ID 교체 필요) */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-          crossOrigin="anonymous"
-        ></script>
-      </head>
       <body className="bg-white text-black font-sans">{children}</body>
     </html>
   );
